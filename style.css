@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( #8a7161, #ffffff);
+    font-family: Lato;
+    font-weight: 500;
+    position: relative;
+    height: 100vh;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 900px;
+    height: 565px;
+    background-image: url(/img/wrapper.png);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px #4e270f;
+}
+
+
+/* and f522 code*/
+
+.logo-area {
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.logo-img {
+    border-radius: 50%;
+}
+
+.logo-text {
+    position: relative;
+    width: 240px;
+    height: 105px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 80px;
+    float: right;
+    color: rgb(245, 245, 245);
+    font-family: Lato;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.player-0-panel,
+.player-1-panel {
+    display: flex;
+    width: 50%;
+    padding: 44px;
+    height: 564px;
+    float: left;
+    justify-content: center;
+}
+
+.active {
+    background-color: rgba(15, 10, 0, 0.432);
+}
+
+.active .player-name::before {
+    content: '\2022';
+    position: relative;
+    font-size: 55px;
+    color: teal;
+    margin-right: 2px;
+    text-shadow: 2px 2px 2px rgb(4, 0, 27);
+}
+
+.active .player-name,
+.active .player-score,
+.active .player-current-box,
+.active .current-score {
+    font-weight: 500;
+}
+
+.player-name {
+    width: 300px;
+    height: 70px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.player-score {
+    position: absolute;
+    top: 220px;
+    width: 130px;
+    height: 90px;
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: 200;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    background-color: rgba(119, 78, 3, 0.192);
+    border-radius: 45px 0px 45px 0px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.player-current-box {
+    position: absolute;
+    top: 445px;
+    border-radius: 0 45px 0 45px;
+    padding: 7px;
+    width: 180px;
+    height: 73px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    background-color: rgba(68, 50, 28, 0.925);
+    box-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.current-score {
+    margin: 5px;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.dice1 {
+    position: absolute;
+    left: 367px;
+    top: 222px;
+    height: 90px;
+    transform: translateX(-50%);
+    transition: 0.3s all ease;
+}
+
+.dice2 {
+    position: absolute;
+    left: 540px;
+    top: 222px;
+    height: 90px;
+    transform: translateX(-50%);
+}
+
+i {
+    color: rgb(221, 221, 221);
+    font-size: 40px;
+    margin-right: 5px;
+    top: 5px;
+    display: inline-block;
+    transition: 0.3s all ease;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    text-align: right;
+}
+
+button {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(41, 0, 0);
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.1s;
+    text-align: center;
+}
+
+button:hover {
+    font-weight: 600;
+}
+
+button i:hover {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none
+}
+
+.btn-new {
+    top: 60px
+}
+
+.btn-roll {
+    top: 330px
+}
+
+.btn-hold {
+    top: 474px
+}
+
+.winner {
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.winner .player-name {
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    text-shadow: 2px 2px 2px red;
+    text-shadow: 2px 2px 2px yellow red;
+}
+
+.player-0-final-score,
+.player-1-final-score {
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    text-align: center;
+    font-size: 110px;
+    font-family: Lato;
+    font-weight: 800;
+    border-radius: 0px 90px 0px 90px;
+    background-color: rgba(54, 35, 5, 0.877);
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.player-0-final-score {
+    top: 115px;
+    left: 60px;
+}
+
+.player-1-final-score {
+    top: 115px;
+    right: 60px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Səndə ZərAT</title>
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="logo-area">
+        <img src="/img/logo.png" class="logo-img" width="160" height="100">
+        <p class="logo-text">ZərAT</p>
+    </div>
+    <div class="wrapper clear-fix">
+        <div class="player-0-panel  ">
+            <div class="player-name" id="name-0">Oyunçu 1</div>
+            <div class="player-score" id="score-0">42</div>
+            <div class="player-current-box">
+                <div class="current-label">Qazanılan xal</div>
+                <div class="current-score" id="current-0">5</div>
+            </div>
+        </div>
+        <div class="player-1-panel active">
+            <div class="player-name" id="name-1">Oyunçu 2</div>
+            <div class="player-score" id="score-1">55</div>
+            <div class="player-current-box">
+                <div class="current-label">Qazanılan xal</div>
+                <div class="current-score" id="current-1">4</div>
+            </div>
+        </div>
+
+        <button type="button" class="btn-new"><i class="fas fa-plus-circle"></i><sup>YENİ OYUN</sup></button>
+        <button type="button" class="btn-roll"><i class="fas fa-dice"></i><sup>ZƏR AT</sup></button>
+        <button type="button" class="btn-hold"><i class="fas fa-chevron-circle-down"></i><sup>SAXLA</sup></button>
+
+        <img src="/img/dice-3.png" alt="dice" class="dice1" id="dice-1">
+        <img src="/img/dice-4.png" class="dice2" alt="dice" id="dice-2">
+
+    </div>
+    <div class="player-0-final-score" id="player-0-final">0</div>
+    <div class="player-1-final-score" id="player-1-final">0</div>
+
+    <script src="/js/backgammon.js"></script>
+</body>
+
+</html>
